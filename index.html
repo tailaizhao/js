@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h1>Alert Message</h1>
+    <p>Today's task is to use Javascript to display a greeting message to a user.</p>
+    <p></p>
+    <p>Below is a button. Whenever user clicks it, a short Javascript code will be executed.</p>
+    <button onclick="greetingUser()">Click Me</button>
+    <!-- This is comment. Browser won't show them. It is only there to help you understand the code. -->
+    <script>
+        function greetingUser() {
+            var name = "Tailai";
+            var greetingMessage = "Welcome " + name;
+            alert(greetingMessage);
+        }
+    </script>
+
+    <h1>Text Field</h1>
+    <p>Text Field is for collecting user's input.</p>
+    <label for="name">Name (4 to 8 characters):</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+    <p>User's input can be accessed via the following Javascript code.</p>
+    <script>
+        function showTheName() {
+            var element = document.getElementById("name");
+            alert(element.value)
+        }
+    </script>
+    <button onclick="showTheName()">Click Again</button>
+
+</body>
