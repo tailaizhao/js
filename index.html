@@ -29,4 +29,17 @@
     </script>
     <button onclick="showTheName()">Click Again</button>
 
+    <p>Now, here is task: create another Text Field, asking user to type their pet's name. Then say ### is a nice name.</p>
+    
+    <h1>Why don't you type your pet's name?</h1>
+    <label for="name">Name (4 to 8 characters):</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+    <button onclick="greetingUser()">Click Me</button>
+    <script>
+        function greetingUser() {
+            var element = document.getElementById("name");
+            alert(element.value + " sounds like a nice name.")
+        }
+    </script>
+
 </body>

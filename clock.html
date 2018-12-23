@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h1>Using Javascript</h1>
+    
+    <h2>Update Text</h2>
+    
+    <p>Recap: HTML is a markup language. You write what you want to display and how you want to using HTML, CSS, and Javascript.</p>
+    <p>Today, we are going to explore how to manuplate text.</p>
+    <p>First, we defien a paragraph. This time, we give it an id so we can find it later on after it is "rendered" to the screen. Then we can change the text to it.</p>
+    <p id="counter">0</p>
+    <button onclick="increaseCounter()">Increase</button>
+    <script>
+        var counter = 0;
+        function increaseCounter() {
+            var element = document.getElementById("counter");
+            counter = counter + 1;
+            element.textContent = counter;
+        }
+    <button onclick="decreaseCounter()">Decrease</button>
+        function decreaseCounter() {
+            if (counter.value = 0) {
+                alert('This value is already zero.');
+            }
+            else {
+                counter = counter - 1;
+            }
+        }
+    </script>
+    <p>Now, try to create another button called Decrease and whenever it get clicked, the value decrease. When it reaches zero, pop an alert message to warn user that it has reached zero. </p>
+</body>
