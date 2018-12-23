@@ -35,10 +35,23 @@
                 var element = document.getElementById("counter");
                 element.textContent = counter;
                 if (counter == 0) {
-                    setTimeout(function() { alert('This value is now zero.'); }, 1);
+                    //setTimeout(function() { alert('This value is now zero.'); }, 1);
+
+                    // var showmsg = function () {
+                    //     alert('This value is now zero.');
+                    // }
+                    // setTimeout(showmsg, 1);
+
+                    setTimeout(show_my_message, 1);
+                    setTimeout(show_my_message, 2);
                 }
             }            
         }
-    </script>
+
+        function show_my_message() {
+            alert('This value is now zero.');
+        }
+    
+     </script>
     <p>Now, try to create another button called Decrease and whenever it get clicked, the value decrease. When it reaches zero, pop an alert message to warn user that it has reached zero. </p>
 </body>
